@@ -7,13 +7,15 @@ We will be working on a Ubuntu machine and also with python.
 <h3>Needed libraries in python</h3>
 BeautifulSoup, Requests, Pandas, time and logging
 
-<h3>Install them in your editor (my case VS Code)</h3>
+<h1>Get your Ubuntu running with these commands</h1>
+
+<h3>Install them in your Ubuntu </h3>
 <ul>
-  <li>pip install BeautifulSoup</li>
-  <li>pip install Pandas</li>
-  <li>pip install Requests</li>
-  <li>pip install bs4</li>
-  <li>pip install logging</li>
+  <li>pip3 install BeautifulSoup4</li>
+  <li>pip3 install Pandas</li>
+  <li>pip3 install Requests</li>
+  <li>pip3 install bs4</li>
+  <li>pip3 install logging</li>
   </ul>
 
 <h1>Install on your machine</h1>
