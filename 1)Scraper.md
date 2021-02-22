@@ -27,7 +27,7 @@ BeautifulSoup, Requests, Pandas, time and logging
 
 <p>Allow the tool to acces your path:</p>
 
-<p>chmod +x ScraperChristophe.py</p>
+<p>chmod +x Scraper.py</p>
 
 <h3>Install the needed libraries in your file</h3>
 <ul>
