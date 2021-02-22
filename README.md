@@ -15,7 +15,8 @@ BeautifulSoup, Requests, Pandas, time and logging
 <li>sudo apt install software-properties-common</li>
 <li>sudo add-apt-repository ppa:deadsnakes/ppa</li>
 <li>sudo apt update</li>
-<li>sudo apt install python3.8</li>
+<li>sudo apt install python3</li>
+<li>sudo apt install python3-pip</li>
 </ul>
 
 <h1>Clone the git and give accces</h1>
@@ -34,7 +35,7 @@ BeautifulSoup, Requests, Pandas, time and logging
   <li>pip3 install Pandas</li>
   <li>pip3 install Requests</li>
   <li>pip3 install bs4</li>
-  <li>pip3 install logging</li>
+  <li>pip3 install logging (might already be installed)</li>
   </ul>
 
 <h1>Run the code</h1>
