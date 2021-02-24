@@ -41,7 +41,7 @@ BeautifulSoup, Requests, Pandas, time and logging
 <h1>Run the code</h1>
 
 <p>Next up if you want to run it:</p>
-<p>python3 ScraperChristophe.py</p>
+<p>python3 Scraper.py</p>
 <h3>This code will make 2 log files</h3>
 <p>To open them you can either go in your Scraper file or open them in the terminal</p>
 <p>To open in terminal use cat NameOfFile.log
