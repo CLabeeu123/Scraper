@@ -10,7 +10,7 @@ import requests
 import time
 
 #Make connection to your database without security
-client = mongo.MongoClient("mongodb ://127.0.0.1:27017")
+client = mongo.MongoClient("mongodb://127.0.0.1:27017")
 
 #Make a function
 def Scraper():
