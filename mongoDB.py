@@ -112,5 +112,5 @@ while True:
   #Store the values in the database
   DataInBase.insert_one(InputInDB)
 
-  #Get the highest amount USD in a log file
-  data.head(1).to_csv("Highest.log", header="Hash", index=None, sep='\t', mode='w')
+  #Print the output in the database
+  print(HashInDB,TimeInDB,BtcInDB,UsdInDB)
