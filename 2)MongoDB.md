@@ -13,6 +13,7 @@ We will be working on a Ubuntu machine and also with python.
 <p>Download the mongoDB and the mongo Compass for a UI.</p>
 <h4>The commands you will need to create your mongoDB</h3>
 <ul>
+ <li>sudo apt install curl</li>
 <li>curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -</li>
 <li>echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list</li>
 <li>sudo apt update</li>
