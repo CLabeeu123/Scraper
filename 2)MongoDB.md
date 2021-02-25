@@ -35,7 +35,7 @@ We will be working on a Ubuntu machine and also with python.
 
 <h3>Install the needed libraries in your file</h3>
 <ul>
-  <li>import pymongo as mongo</li>
+  <li>pip3 install pymongo</li>
   </ul>
 
 <h1>Run the code</h1>
