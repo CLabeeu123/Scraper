@@ -42,7 +42,7 @@ We will be working on a Ubuntu machine and also with python.
 <h1>Run the code</h1>
 
 <p>Next up if you want to run it:</p>
-<p>python3 MongoDB.py</p>
+<p>python3 mongoDB.py</p>
 <p>This will forward the output to your mongo database.
 
 <h1>Code</h1>
