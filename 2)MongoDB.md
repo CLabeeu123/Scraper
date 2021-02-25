@@ -25,9 +25,12 @@ We will be working on a Ubuntu machine and also with python.
 </ul>
 
 <h1>Clone the git and give accces</h1>
-<p>First we need to clone the repository to acces it ourselfs using these commands:</p>
+<p>First we need to update our code so we will need the new code in our VM:</p>
 
-<p>git clone https://github.com/CLabeeu123/Scraper.git</p>
+<p>git fetch origin</p>
+<p>git commit -m 'Commit'</p>
+<p>Press ctrl + x</p>
+<p>git pull</p>
 <p>cd Scraper</p>
 
 <p>Allow the tool to acces your path:</p>
