@@ -2,6 +2,7 @@
 Now that we have scraped our website we want to put our precious data into a DataBase.
 We will be working on a Ubuntu machine and also with python.
 <br>
+<h1>NOTE DO NOT FORGET TO PULL THE UPDATED CODE FIRST IN YOUR VM, EXPLAINED BELOW</h1>
 
 <h1>To install</h1>
 <h3>Extra library you need to install</h3>
@@ -22,6 +23,12 @@ We will be working on a Ubuntu machine and also with python.
 <li>sudo systemctl status mongod</li>
 <li>sudo systemctl enable mongod</li>
 <li>mongo --eval 'db.runCommand({ connectionStatus: 1 })'</li>
+</ul>
+<h3>Or run the bash file</h3>
+<ul>
+ <li>cd Scraper</li>
+ <li>chmod +x mongo.sh</li>
+ <li>mongo.sh</li>
 </ul>
 
 <h1>Clone the git and give accces</h1>
