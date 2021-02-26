@@ -31,7 +31,7 @@ We will be working on a Ubuntu machine and also with python.
  <li>mongo.sh</li>
 </ul>
 
-<h1>Clone the git and give accces</h1>
+<h1>Update the git and give accces</h1>
 <p>First we need to update our code so we will need the new code in our VM:</p>
 
 <p>git fetch origin</p>
