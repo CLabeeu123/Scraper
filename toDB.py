@@ -13,7 +13,7 @@ import time
 client = mongo.MongoClient("mongodb://127.0.0.1:27017")
 
 # Make a connection with redis
-connect = redis.Redis()
+connect = redis.redis()
 
 # Make new list or arrays
 HashTable = []
