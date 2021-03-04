@@ -4,7 +4,7 @@ import numpy as np
 import logging
 import pymongo as mongo
 import json
-from redis import Redis
+import redis
 from bs4 import BeautifulSoup
 import requests
 import time
