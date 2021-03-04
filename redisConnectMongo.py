@@ -14,7 +14,7 @@ import multiprocessing
 client = mongo.MongoClient("mongodb://127.0.0.1:27017")
 
 # Make a connection with redis
-connect = Redis.Redis()
+connect = redis.Redis()
 
 # Connect to the existing names
 database = client["Database"]
