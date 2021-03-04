@@ -4,7 +4,6 @@ import numpy as np
 import logging
 import pymongo as mongo
 import json
-import redis
 from redis import Redis
 from bs4 import BeautifulSoup
 import requests
@@ -14,7 +13,7 @@ import time
 client = mongo.MongoClient("mongodb://127.0.0.1:27017")
 
 # Make a connection with redis
-connect = redis.Redis()
+connect = Redis.Redis()
 
 # Make new list or arrays
 HashTable = []
