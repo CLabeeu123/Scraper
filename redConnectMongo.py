@@ -36,14 +36,14 @@ def ToMongoDB(connect, DataInBase):
     ToUsd = list(map(float, connect.lrange("Amount(USD)", 0, -1)))
 
     #Pass on the values
-    money = max(ToUsd)
-    index = ToUsd.index(money)
+    myUsd = max(ToUsd)
+    index = ToUsd.index(myUsd)
     hashing = ToHash[index]
     timing = ToTime[index]
     bitcoining = ToBtc[index]
 
     #The things you are going to send
-    Total = {"Hash": hashing, "Time": timing, "Amount(BTC)": bitcoining, "Amount(USD)": money}
+    Total = {"Hash": hashing, "Time": timing, "Amount(BTC)": bitcoining, "Amount(USD)": myUsd}
     
     #Store output in DB
     DataInBase.insert_one(Total)
