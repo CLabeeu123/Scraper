@@ -2,6 +2,7 @@
 Now that we have scraped our website we want to put our precious data into a DataBase.
 We will be working on a Ubuntu machine and also with python.
 <br>
+<h1>NOTE DO NOT FORGET TO PULL THE UPDATED CODE FIRST IN YOUR VM, EXPLAINED BELOW</h1>
 
 <h1>To install</h1>
 <h3>Extra library you need to install</h3>
@@ -23,11 +24,21 @@ We will be working on a Ubuntu machine and also with python.
 <li>sudo systemctl enable mongod</li>
 <li>mongo --eval 'db.runCommand({ connectionStatus: 1 })'</li>
 </ul>
+<h3>Or run the bash file</h3>
+<ul>
+ <li>cd Scraper</li>
+ <li>chmod +x mongo.sh</li>
+ <li>mongo.sh</li>
+</ul>
+<pThen make a new database in your mongoDB</p>
 
-<h1>Clone the git and give accces</h1>
-<p>First we need to clone the repository to acces it ourselfs using these commands:</p>
+<h1>Update the git and give accces</h1>
+<p>First we need to update our code so we will need the new code in our VM:</p>
 
-<p>git clone https://github.com/CLabeeu123/Scraper.git</p>
+<p>git fetch origin</p>
+<p>git commit -m 'Commit'</p>
+<p>Press ctrl + x</p>
+<p>git pull</p>
 <p>cd Scraper</p>
 
 <p>Allow the tool to acces your path:</p>
