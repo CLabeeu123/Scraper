@@ -32,7 +32,7 @@ def ToMongoDB(connect, DataInBase):
     #Fill in your lists or arrays
     ToHash = list(map(str, connect.lrange("LRANGE (name) 0 -1", 0, -1)))
     ToTime = list(map(str, connect.lrange("Time", 0, -1)))
-    ToBtc = list(map(float, connect.lrange("Amount(BTC)", 0, -1)))
+    ToBtc = list(map(str, connect.lrange("Amount(BTC)", 0, -1)))
     ToUsd = list(map(float, connect.lrange("Amount(USD)", 0, -1)))
 
     #Pass on the values
