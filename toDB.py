@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import logging
 import pymongo as mongo
-import json
+import json 
 import redis
 from bs4 import BeautifulSoup
 import requests
@@ -13,7 +13,7 @@ import time
 client = mongo.MongoClient("mongodb://127.0.0.1:27017")
 
 # Make a connection with redis
-connect = redis.redis()
+connect = redis.Redis()
 
 # Make new list or arrays
 HashTable = []
