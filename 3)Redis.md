@@ -31,7 +31,7 @@ We will be working on a Ubuntu machine and also with python.
 <p>Allow the tool to acces your path:</p>
 
 <p>chmod +x toDB.py</p>
-<p>chmod +x redisConnectMongo.py</p>
+<p>chmod +x redConnectMongo.py</p>
 
 <h3>Install the needed libraries in your file</h3>
 <ul>
@@ -43,7 +43,7 @@ We will be working on a Ubuntu machine and also with python.
 
 <p>Next up if you want to run it:</p>
 <p>python3 toDB.py</p>
-<p>Then we need to run the redisConnectMongo.py</p>
+<p>Then we need to run the redConnectMongo.py</p>
 
 <h3>Next up open the mongo compass and see the changes </h3>
 
