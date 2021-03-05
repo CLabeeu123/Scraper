@@ -52,8 +52,7 @@ def Scraper(HashTable, TimeTable, BtcTable, UsdTable, connect, DataInBase):
                       'class': 'sc-1r996ns-0 fLwyDF sc-1tbyx6t-1 kCGMTY iklhnl-0 eEewhk d53qjk-0 ctEFcK'})
         Time = d.findAll('span', attrs={
                          'class': 'sc-1ryi78w-0 cILyoi sc-16b9dsl-1 ZwupP u3ufsr-0 eQTRKC'})
-        btc = d.find('div', attrs={
-                        'class':'sc-1ryi78w-0 cILyoi sc-16b9dsl-1 ZwupP u3ufsr-0 eQTRKC'})
+        btc = d.find('div', class_='sc-1au2w4e-0 fTyXWG')
 
         btcConvert = float(btc.text[12:len(btc.text) - 3].strip())
 
