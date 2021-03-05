@@ -54,8 +54,10 @@ def Scraper(HashTable, TimeTable, BtcTable, UsdTable, connect, DataInBase):
                          'class': 'sc-1ryi78w-0 cILyoi sc-16b9dsl-1 ZwupP u3ufsr-0 eQTRKC'})
         btc = d.findAll('span', attrs={
                         'class': 'sc-1ryi78w-0 cILyoi sc-16b9dsl-1 ZwupP u3ufsr-0 eQTRKC'})
+        btcConvert = float(btc.text[12:len(btc.text) - 3].strip())
         usd = d.findAll('span', attrs={
                         'class': 'sc-1ryi78w-0 cILyoi sc-16b9dsl-1 ZwupP u3ufsr-0 eQTRKC'})
+        usdConvert = float(usd[2].text[1:].replace(',','').replace('$',''))
 
         # If the value is not found it will say it is unknown else it will show the output and push to Redis
         if Hash is not None:
@@ -72,17 +74,17 @@ def Scraper(HashTable, TimeTable, BtcTable, UsdTable, connect, DataInBase):
         else:
             FilledTimeTable.append("Time is not known")
 
-        if btc is not None:
-            FilledBtcTable.append(btc[1].text)
-            connect.rpush("Amount(BTC)", str(btc))
+        if btcConvert is not None:
+            FilledBtcTable.append(btcConvert)
+            connect.rpush("Amount(BTC)", str(btcConvert))
 
         else:
             FilledBtcTable.append("BTC is not known")
 
         if usd is not None:
-            FilledBtcTable.append(
-                float(usd[2].text.replace(',', '').replace('$', '')))
-            connect.rpush("Amount(USD)", str(usd))
+            usdConvert = btcConvert * usdConvert
+            FilledBtcTable.append(usdConvert)
+            connect.rpush("Amount(USD)", str(usdConvert))
 
         else:
             FilledBtcTable.append("USD is not known")
